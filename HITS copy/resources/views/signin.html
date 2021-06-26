@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <title>HITS! Signin</title>
+</head>
+<body class="before-login" id="wrapper">
+  <header>
+    <div id="headerborder"></div>
+    <div class="header-hidden">
+      <ul class="header-hidden-info">
+        <li class="header-hidden-info-account">こんにちはアカウントさん</li>
+        <li class="header-hidden-info-logout"><a class="header-hidden-info-logout" href="@@@">logout</a></li>
+      </ul>
+    </div>
+    <div class="menuBar">
+        <img class="logo" src="images/logo&title.png" alt="HITS!LOGO">
+    </div>
+  </header>
+  <div class="body">
+    <form action="###" method="POST" id="signin-info">
+      <div class="page-top-guidence">
+        <p class="page-top-guidence-1">アカウント情報をご入力ください</p>
+        <p class="page-top-guidence-2">*マークは必須項目です</p>
+      </div>
+      <div class="signin-info">
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">名前*</dt>
+          <dd class="signin-info-item-input">
+            <label for="last-name" class="signin-info-item-input-textbox">姓:<br></label><input type="text" id="last-name" name="last-name" required minlength="1" maxlength="144" size="10">
+          </dd>
+          <dd class="signin-info-item-input">
+            <label for="first-name" class="signin-info-item-input-textbox">名:<br></label><input type="text" id="first-name" name="first-name" required minlength="1" maxlength="144" size="10">
+          </dd>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">ナマエ</dt>
+          <dd class="signin-info-item-input">
+            <label for="last-name-kana" class="signin-info-item-input-textbox">セイ:<br></label><input type="text" id="last-name-kana" name="last-name-kana" minlength="1" maxlength="144" size="10">
+          </dd>
+          <dd class="signin-info-item-input">
+            <label for="first-name-kana" class="signin-info-item-input-textbox">メイ:<br></label><input type="text" id="first-name-kana" name="first-name-kana" minlength="1" maxlength="144" size="10">
+          </dd>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">NAME*</dt>
+          <dd class="signin-info-item-input">
+            <label for="last-name-eng" class="signin-info-item-input-textbox">Last:</label><input type="text" id="last-name-eng" name="last-name-eng" required minlength="1" maxlength="144" size="10">
+          </dd>
+          <dd class="signin-info-item-input">
+            <label for="first-name-eng" class="signin-info-item-input-textbox">First:</label><input type="text" id="first-name-eng" name="first-name-eng" required minlength="1" maxlength="144" size="10">
+          </dd>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">EMAIL*</dt>
+          <dd class="signin-info-item-input">
+            <label for="email" class="signin-info-item-input-textbox"></label><input type="email" id="email" name="email" required minlength="1" maxlength="144" size="10">
+          </dd>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">TEL</dt>
+          <dd class="signin-info-item-input">
+            <label for="tel" class="signin-info-item-input-textbox"></label><input type="tel" id="tel" name="tel" minlength="1" maxlength="144" size="10">
+          </dd>
+          <div class="input-caution">
+            <p>- (ハイフン)不要です</p>
+          </div>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">IMAGE</dt>
+          <dd class="signin-info-item-input">
+            <label for="image" class="signin-info-item-input-textbox"></label><img src="@@@" alt="account-picture" id="account-picture">
+          </dd>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">PASSWORD*</dt>
+          <dd class="signin-info-item-input">
+            <label for="pass" class="signin-info-item-input-textbox"></label><input type="password" id="pass" name="pass" required minlength="1" maxlength="144" size="10">
+          </dd>
+          <div class="input-caution">
+            <p>英数字8文字以上 大文字 小文字が1つ以上必要です</p>
+          </div>
+        </dl>
+
+        <dl class="signin-info-item">
+          <dt class="signin-info-item-title">PASSWORD*<br>(confirm)</dt>
+          <dd class="signin-info-item-input">
+            <label for="pass-again" class="signin-info-item-input-textbox"></label><input type="password" id="pass-again" name="pass-again" required minlength="1" maxlength="144" size="10">
+          </dd>
+          <div class="input-caution">
+            <p>確認のため再度ご入力ください</p>
+          </div>
+        </dl>
+
+        <div class="buttons">
+          <input class="submit-signin-info" type="submit" value="Go Confirm">
+          <input class="get-back-button" type="button" value="Get Back">
+        </div>
+      </div>
+    </form>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+<footer>
+  <div class="copy-right">
+    <small>Copyright &copy;HITS! All Rights Reserved.</small>
+  </div>
+</footer>
+</html>
